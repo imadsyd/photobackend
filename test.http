@@ -1,0 +1,58 @@
+POST http://localhost:8080/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="myfile"
+
+< ./upload2.txt
+--WebAppBoundary--
+
+###
+POST http://localhost:8080/photo2
+Content-Type: application/json
+
+{"id":  18, "label" :  "mouse", "uri" :  "uri"}
+
+
+###
+
+
+###
+POST http://localhost:80/api/item
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="file.txt"
+
+< ./relative/path/to/local_file.txt
+--WebAppBoundary--
+
+###
+GET http://localhost:8080/image/afc3a2ff-334f-4036-97ed-8232e71bc4af
+Accept: application/json
+
+###
+POST http://localhost:8080/photo2
+Content-Type: application/json
+
+{"id":  17, "label" :  "mouse", "uri" :  "uri"}
+
+###
+
+
+
+###
+POST http://localhost:8080/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="upload2"
+
+< ./upload2.txt
+--WebAppBoundary--
+
+###
+
+
+
+
