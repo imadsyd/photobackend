@@ -8,7 +8,7 @@ Content-Disposition: form-data; name="file"; filename="myfile"
 --WebAppBoundary--
 
 ###
-POST  https://photobackend-service-jnfhu2ufpa-uk.a.run.app:8080/photo2
+POST  https://photobackend-service-jnfhu2ufpa-uk.a.run.app/photo2
 Content-Type: application/json
 
 {"id":  19, "label" :  "mouse", "uri" :  "uri"}
