@@ -7,18 +7,20 @@ Content-Disposition: form-data; name="file"; filename="myfile"
 < ./upload2.txt
 --WebAppBoundary--
 
+
 ###
-POST  https://photobackend-service-jnfhu2ufpa-uk.a.run.app/photo2
+
+POST  https://photobackend2-jnfhu2ufpa-uc.a.run.app/photo2
 Content-Type: application/json
 
-{"id":  19, "label" :  "mouse", "uri" :  "uri"}
+{"id":  21, "label" :  "mouse", "uri" :  "uri"}
 
 
 ###
 POST http://localhost:8080/photo2
 Content-Type: application/json
 
-{"id":  18, "label" :  "mouse", "uri" :  "uri"}
+{"id":  20, "label" :  "mouse", "uri" :  "uri"}
 
 
 ###
