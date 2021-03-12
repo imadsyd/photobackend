@@ -1,2 +1,13 @@
 steps:
-  - name: 'gcr.io/cloud-builders/docker'
+  - name: 'gcr.io/cloud-builders/gcloud'
+
+    args:
+      - 'run'
+      - 'deploy'
+      - '[SERVICE-NAME]'
+      - '--image'
+      - 'gcr.io/photobackend2/photobackend'
+      - '--region'
+      - '[REGION]'
+      - '--platform'
+      - 'managed'
